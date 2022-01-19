@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type=text/javascript src="GYM.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Style.css">
+        <div class="header">
+            <h6>GYM REGISTRATION</h6>
+        </div>
+    </head>
+<body>
+<div class="container">
+<form method="post" action="" name="Gymform" onsubmit=" return validateForm()">
+    <div class="group1">
+        <label>Name</label>
+        <br>
+        <input type="text" id="name" name="fname" placeholder="Your name.." >
+        <span id="username"></span>
+    </div>
+
+    <br>
+    <div class="group1">
+        <label >Mobile No</label><br>
+        <input type="phone" id="mbno" name="phnum" placeholder="Your mobile number....">
+        <span id="phnum"></span>
+    </div>
+    <br>
+
+    <div class="group1">
+        <label for="dob">DOB</label><br>
+        <input type="date" id="dob" name="dt" placeholder="Your date of birth....">
+        <span id="dt"></span>
+    </div>
+    <br>
+    <div class="group1">
+        <label for="dob">Registration date</label><br>
+        <input type="date" id="dtr" name="dtt" placeholder="Your date of Registration....">
+        <span id="dtt"></span>
+    </div>
+    <br>
+    <div class="group1">
+        <label for="weight">Weight</label><br>
+        <input type="text" id="wt" name="wt" placeholder="Your weight....">
+        <span id="wt"></span>
+    </div>
+    <br>
+    <div class="group1">
+        <label for="height">Height</label><br>
+        <input type="text" id="ht" name="ht" placeholder="Your height....">
+        <span id="ht"></span>
+    </div>
+    <br>
+    <div class="group1">
+        <label for="goal">Goal</label><br>
+        <input type="text" id="gl" name="hgl" placeholder="Your goal....">
+        <span id="hgl"></span>
+    </div>
+    <br>
+    <div class="group1">
+        <label for="od">Other details</label><br>
+        <input type="text" id="od" name="od" placeholder="Other ....">
+        <span id="od"></span>
+    </div>
+    <br>
+    <div class="button">
+        <br>
+        <input type="submit" value="Register" >
+        <input type="submit" value="Clear">
+        </div>
+        <span id="age" hidden></span>
+        <span id="days" hidden></span>
+</form>
+</div>
+<div id="reg" hidden>
+    <table id="myTable" border="1">
+            <th>
+                <td>Name</td>
+                <td>Contact</td>
+                <td>Age</td>
+                <td>Goal</td>
+                <td>Remaining Days</td>
+            </th>
+    </table>
+</div> 
+</body>
+</html>
+
